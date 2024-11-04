@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro FODA - Man-Go</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            background-color: #F7B436;
+            font-family: 'Quicksand', sans-serif;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #f7b436;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: floralwhite;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.2em;
+        }
+
+        /* Navegación */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: #f7b436;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #f7b436;
+        }
+
+        /* Contenedor principal */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff5e6;
+        }
+
+        .section {
+            max-width: 900px;
+            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Cuadrícula FODA */
+        .foda {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Tarjetas FODA */
+        .foda div {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .foda div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .foda div h3 {
+            font-size: 1.4em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .foda div p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .foda div p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestro FODA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="Mision.html">Misión y Visión</a></li>
+                <li><a href="Came.html">Nuestro CAME</a></li>
+                <li><a href="Foda.html">Nuestro FODA</a></li>
+                <li><a href="Precios.html">Nuestros precios</a></li>
+                <li><a href="Contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Análisis FODA</h2>
+            <div class="foda">
+                <div class="fortaleza">
+                    <h3>Fortalezas</h3>
+                    <p>Nuestra fortaleza como empresa es la fiabilidad que representamos, pues nuestro objetivo es mantener esa fiabilidad en todo lo que hacemos.</p>
+                </div>
+
+                <div class="oportunidad">
+                    <h3>Oportunidades</h3>
+                    <p>Aprovechamos cualquier oportunidad para darnos a conocer y mercadear nuestro producto.</p>
+                </div>
+
+                <div class="debilidad">
+                    <h3>Debilidades</h3>
+                    <p>El alcance de nuestro producto aún no ha llegado a todos los rincones del país.</p>
+                </div>
+
+                <div class="amenaza">
+                    <h3>Amenazas</h3>
+                    <p>La competencia en el mercado y la dificultad de estar presentes en todas las tiendas necesarias.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2023 Man-Go. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man-Go - Quiénes Somos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            background-color: #F7B436;
+            font-family: 'Quicksand', sans-serif;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #f7b436;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: floralwhite;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.2em;
+        }
+
+        /* Navegación */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            gap: 20px;
+            background-color: #f7b436;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #f7b436;
+        }
+
+        /* Contenedor principal */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff5e6;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Estilos de la sección */
+        .section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .section img {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+        .section p {
+            line-height: 1.6;
+            text-align: justify;
+            color: #555;
+            font-size: 1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Man-Go</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="Mision.html">Misión y Visión</a></li>
+                <li><a href="Came.html">Nuestro CAME</a></li>
+                <li><a href="Foda.html">Nuestro FODA</a></li>
+                <li><a href="Precios.html">Nuestros precios</a></li>
+                <li><a href="Contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2>Contáctanos</h2>
+                <img src="Insta Mango.jpeg" alt="Instagram de Man-Go">
+                <p>Puedes seguirnos en nuestras redes sociales para estar al tanto de todas las novedades de Man-Go y conocer nuestras iniciativas y productos.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        © 2023 Man-Go. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

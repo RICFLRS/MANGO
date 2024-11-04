@@ -1,0 +1,113 @@
+<style>
+    /* Estilos generales */
+    body {
+        background-color: #F7B436; /* Color de fondo */
+        font-family: 'Quicksand', sans-serif; /* Fuente del cuerpo */
+        margin: 0;
+        padding: 20px;
+    }
+
+    header {
+        background-color: #f7b436; /* Color del encabezado */
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: #4CAF50; /* Color blanco */
+        font-family: 'Roboto', sans-serif; /* Fuente para títulos */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    nav ul {
+        list-style-type: none; /* Sin puntos en la lista */
+        padding: 0;
+        text-align: center; /* Centra el menú de navegación */
+    }
+
+    nav ul li {
+        display: inline; /* Elementos en línea */
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #4CAF50; /* Color del texto de los enlaces */
+        text-decoration: none; /* Sin subrayado */
+        transition: color 0.3s; /* Transición suave para el color */
+    }
+
+    nav ul li a:hover {
+        color: #333; /* Color al pasar el mouse */
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #333; /* Color gris oscuro */
+        margin-top: 20px; /* Espaciado superior */
+        font-family: 'Roboto', sans-serif; /* Fuente para subtítulos */
+    }
+
+    p {
+        color: #555; /* Color gris */
+        line-height: 1.5;
+        margin: 0 0 20px 0;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto; /* Centrar imagen */
+        border: 2px solid #4CAF50; /* Borde verde */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    .container {
+        max-width: 800px; /* Ancho máximo */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: floralwhite; /* Fondo blanco */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    .section {
+        margin-bottom: 40px; /* Espaciado entre secciones */
+    }
+
+    /* Estilos para la sección de Visión y Misión */
+    .vision-mision, .foda {
+        display: flex;
+        justify-content: space-between; /* Alinear lado a lado */
+        gap: 20px; /* Espacio entre columnas */
+    }
+
+    .vision, .mision, .fortaleza, .oportunidad, .debilidad, .amenaza {
+        flex: 1; /* Todas ocupan el mismo espacio */
+        background-color: #f2f2f2; /* Fondo gris claro */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .vision-mision, .foda, .came {
+            flex-direction: column; /* Colocar uno encima del otro */
+        }
+    }
+
+    footer {
+        background-color: #4CAF50; /* Color del pie de página */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
